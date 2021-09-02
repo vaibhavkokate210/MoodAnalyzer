@@ -12,7 +12,7 @@ public class MoodAnalyzerTest
     @Test
     public void respondMood_Sad_Or_Happpy()
     {
-        String result = moodAnalyzer.analyseMood("I am in sad mood");
-        Assert.assertEquals("SAD", result);
+        String result = moodAnalyzer.analyseMood("I am in any mood");
+        Assert.assertEquals("HAPPY", result);
     }
 }
