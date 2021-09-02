@@ -7,12 +7,12 @@ import com.bridgelabz.moodanalyzer.MoodAnalyze;
 
 public class MoodAnalyzerTest 
 {
-	MoodAnalyze moodAnalyzer = new MoodAnalyze("I am in sad mood");
+	MoodAnalyze moodAnalyzer = new MoodAnalyze("I am in happy mood");
 
     @Test
     public void respondMood_Sad_Or_Happpy()
     {
         String result = moodAnalyzer.analyseMood();
-        Assert.assertEquals("sad", result);
+        Assert.assertEquals("happy", result);
     }
 }
