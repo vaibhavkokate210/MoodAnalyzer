@@ -14,10 +14,10 @@ public class MoodAnalyze
 	public String analyseMood()
 	{
         if (message.toLowerCase().contains("happy"))
-            return "HAPPY";
+            return "happy";
         else if (message.toLowerCase().contains("sad"))
-            return "SAD";
+            return "sad";
         else
-            return "HAPPY";
+            return "happy";
     }
 }
