@@ -13,9 +13,9 @@ public class MoodAnalyze
 	}
 	public String analyseMood() throws MoodAnalysisException
 	{
-		if(message==null)
+		if(message.equals(""))
 		{
-			throw new MoodAnalysisException("NULL_VALUE",ExceptionTypes.NULL_VALUE);
+			throw new MoodAnalysisException("Empty_VALUE",ExceptionTypes.EMPTY_VALUE);
 		}
         if (message.toLowerCase().contains("happy"))
             return "happy";

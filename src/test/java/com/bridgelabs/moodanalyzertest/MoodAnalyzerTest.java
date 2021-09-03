@@ -9,7 +9,7 @@ import com.bridgelabz.moodanalyzer.MoodAnalyze;
 
 public class MoodAnalyzerTest 
 {
-	MoodAnalyze moodAnalyzer = new MoodAnalyze(null);
+	MoodAnalyze moodAnalyzer = new MoodAnalyze("");
 
     @Test
     public void respondMood_Sad_Or_Happpy()
@@ -22,7 +22,7 @@ public class MoodAnalyzerTest
 		catch (MoodAnalysisException e) 
 		{
 			
-		     Assert.assertEquals(ExceptionTypes.NULL_VALUE, e.type);
+		     Assert.assertEquals(ExceptionTypes.EMPTY_VALUE, e.type);
 		 }
     }
 }
