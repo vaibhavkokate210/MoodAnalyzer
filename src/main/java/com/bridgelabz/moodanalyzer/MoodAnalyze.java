@@ -13,7 +13,10 @@ public class MoodAnalyze
 	}
 	public String analyseMood() throws MoodAnalysisException
 	{
-		
+		if(message==null)
+		{
+			throw new MoodAnalysisException("NULL_VALUE",ExceptionTypes.NULL_VALUE);
+		}
         if (message.toLowerCase().contains("happy"))
             return "happy";
         else if (message.toLowerCase().contains("sad"))

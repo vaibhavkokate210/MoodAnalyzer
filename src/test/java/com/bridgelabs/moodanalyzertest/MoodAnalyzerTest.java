@@ -9,7 +9,7 @@ import com.bridgelabz.moodanalyzer.MoodAnalyze;
 
 public class MoodAnalyzerTest 
 {
-	MoodAnalyze moodAnalyzer = new MoodAnalyze("I am happy");
+	MoodAnalyze moodAnalyzer = new MoodAnalyze(null);
 
     @Test
     public void respondMood_Sad_Or_Happpy()
